@@ -1,0 +1,11 @@
+INFO:root:Start program...
+INFO:root:Vector of solutions is:
+INFO:root:[[1.]
+ [0.]
+ [1.]]
+INFO:root:Vector of incorrect solutions, obtained through changing the order of the matrix multipliers,is:
+INFO:root:[[-0.33333333 -1.66666667  0.33333333]]
+INFO:root:Are vectors equal?
+INFO:root:[[False False False]
+ [False False False]
+ [False False False]]
