@@ -43,15 +43,9 @@ than we see at Fig.4.
 Experiment with numerous throws of stone shows that combination of parameters (velosity and angle) 
 with normal and uniform distributions are likely to result in normal distribution of the distance.         
 
-<i>Code for drawing the figures above may be found at **throwing.py**</i>
+Code for drawing the figures above may be found at **throwing.py**
 
-First, you need to prepare a json-file with paramenters: a scalar and a vector. See example below:<br>
-<i>&nbsp;&nbsp;  {&nbsp; "scalar": [1],<br>
-&nbsp;&nbsp;    "vector":&nbsp;[[3,-2,-1]]&nbsp; } </i>
+Also refer to [GitHub page](https://github.com/denismoroz1981/ML29092020/tree/master/cubic).
 
-After that launch **f_activation.py** in Terminal window with compulsory argument -- path to your json-file.
-```
-python system.py --path params.json
-```
-Calculated derivatives or information about errors might be found at the log-file **app_activation.log**.
+
 
