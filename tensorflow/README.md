@@ -5,7 +5,7 @@ of them to test: "TNC","Powell" and "COBYLA".
 
 As test range we have obtained 20 dots at 2D grid using a quadratic function 3*x^2+2*x+1 and adding a noise of N(0,1).    
 
-So, our task to find the quadratic function parameters: a, b, c - and standard deviation (sd) of noise which approximize
+So, our task to find the quadratic function parameters: a, b, c and standard deviation (sd) of noise which approximize
 our test data most accurately using the methods listed above.    
 
 *Scipy.optimize.minimize* methods also assume that we set initial guess as starting point for an algorithm 
@@ -34,7 +34,7 @@ approximation of our quadratic function.
 
 Code for drawing the figures above may be found at **mle_accuracy.py**
 
-Also refer to [GitHub page](https://github.com/denismoroz1981/ML29092020/tree/master/hw_4_moroz).
+Also refer to [GitHub page](https://github.com/denismoroz1981/ML29092020/tree/master/hw_5_moroz).
 
 
 
