@@ -189,8 +189,12 @@ def train (net=linreg, loss=squared_loss, lr =0.03, num_epochs=3,batch_size=10):
 
 if __name__ == '__main__':
     #we will vary hyperparametets to see train progress by batch
-    #train(net=linreg, loss=squared_loss, lr =0.03, num_epochs=2,batch_size=10)
-    #train(net=linreg, loss=squared_loss, lr =0.003, num_epochs=12,batch_size=10)
+    #train(net=linreg, loss=squared_loss, lr =0.03, num_epochs=3,batch_size=10)
+    #train(net=linreg, loss=squared_loss, lr =0.03, num_epochs=6,batch_size=10)
+    #train(net=linreg, loss=squared_loss, lr =0.006, num_epochs=17,batch_size=10)
     #train(net=linreg, loss=squared_loss, lr =1, num_epochs=1,batch_size=10)
-    #train(net=linreg, loss=squared_loss, lr =0.03, num_epochs=2,batch_size=5)
-    train(net=linreg, loss=mae, lr =0.03, num_epochs=6,batch_size=10)
+    #train(net=linreg, loss=squared_loss, lr =0.03, num_epochs=3,batch_size=5)
+    #train(net=linreg, loss=squared_loss, lr =0.03, num_epochs=3,batch_size=1)
+    train(net=linreg, loss=squared_loss, lr =0.03, num_epochs=40,batch_size=1000)
+    #train(net=linreg, loss=mae, lr =0.03, num_epochs=6,batch_size=10)
+    #train(net=linreg, loss=squared_loss, lr =0.05, num_epochs=2,batch_size=10)

@@ -1,7 +1,7 @@
 ##  Linear regression study
 
 In the file lin_regr.py you may find a code which using linear regression method seeks weights and bias of the function 
-having format:  w1*x1 + w2*x2 +…+ wn*xn +b. 
+having format:  w1*x1 + w2*x2 +…+ wn*xn + b. 
 
 In order to test our code and observe training process we have generated test data using function 2*x1-3,4*x2+4.2, so 
 its weights (2, -3,4) and bias (4,2) we are going to predict.
