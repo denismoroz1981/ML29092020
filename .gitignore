@@ -1,4 +1,7 @@
-.idea/
-__pycache__
-venv/
-cubic_env/
+.idea/ 
+/Perceptron/mnist 
+/keras_mnist/venv 
+/tensorflow/venv 
+/Perceptron/venv 
+/Perceptron_V/venv 
+/cubic/cubic_venv 

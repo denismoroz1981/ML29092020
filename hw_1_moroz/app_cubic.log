@@ -1,9 +1,1 @@
 INFO:root:Start program...
-INFO:root:Params loaded!
-INFO:root:q = -0.5555555555555556
-INFO:root:r = 1.2962962962962963
-INFO:root:s = -1.8518518518518516
-INFO:root:One real root and two complex ones:
-INFO:root:x1 = -1.6506291914393882
-INFO:root:x2 = (-0.17468540428030588+1.5468688872313963j)
-INFO:root:x3 = (-0.17468540428030588-1.5468688872313963j)

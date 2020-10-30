@@ -88,6 +88,35 @@ class neuralNetwork:
         self.wih += 100
         self.save_weights()
 
+    # обучение нейронной сети
+    def train(self, inputs_list, targets_list):
+        # преобразование входного списка 2d массив
+        inputs = numpy.array(inputs_list, ndmin=2).T
+        targets = numpy.array(targets_list, ndmin=2).T
+
+        # вычисление сигналов на входе в скрытый слой
+        hidden_inputs = numpy.dot(self.wih, inputs)
+        # вычисление сигналов на выходе из скрытого слоя
+        hidden_outputs = self.activation_function(hidden_inputs)
+
+        # вычисление сигналов на входе в выходной слой
+        final_inputs = numpy.dot(self.who, hidden_outputs)
+        # вычисление сигналов на выходе из выходного слоя
+        final_outputs = self.activation_function(final_inputs)
+
+        # ошибка на выходе (целевое значение - рассчитанное)
+        output_errors = targets - final_outputs
+        # распространение ошибки по узлам скрытого слоя
+        hidden_errors = numpy.dot(self.who.T, output_errors)
+
+        # пересчет весов между скрытым и выходным слоем
+        self.who += self.lr * numpy.dot((output_errors * final_outputs * (1.0 - final_outputs)),
+                                        numpy.transpose(hidden_outputs))
+
+        # пересчет весов между входным и скрытым слоем
+        self.wih += self.lr * numpy.dot((hidden_errors * hidden_outputs * (1.0 - hidden_outputs)),
+                                        numpy.transpose(inputs))
+        pass
 
 if __name__ == '__main__':
     # Задание архитектуры сети:
